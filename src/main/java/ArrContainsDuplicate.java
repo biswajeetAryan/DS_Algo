@@ -5,12 +5,12 @@ import java.util.Set;
 public class ArrContainsDuplicate {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1};
-        Solution obj = new Solution();
+        SolutionContainsDuplicate obj = new SolutionContainsDuplicate();
         System.out.println(obj.containsDuplicate(nums));
     }
 }
 
-class Solution {
+class SolutionContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> numsSet = new HashSet<Integer>();
         for (int item: nums) {
