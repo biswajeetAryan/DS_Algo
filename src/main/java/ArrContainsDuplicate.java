@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ContainsDuplicate {
+public class ArrContainsDuplicate {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1};
         Solution obj = new Solution();
