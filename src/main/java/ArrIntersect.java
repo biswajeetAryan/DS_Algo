@@ -10,23 +10,22 @@ public class ArrIntersect {
 }
 class SolutionArrIntersect {
     public int[] intersect(int[] nums1, int[] nums2) {
-        int n1=nums1.length, n2=nums2.length, k=0;
         List<Integer> resList = new ArrayList<>();
         Map<Integer, Integer> myMap = new HashMap<>();
 
-        for (int value : nums1) {
-            if ((myMap.containsKey(value))) {
-                myMap.put(value, myMap.get(value) + 1);
+        for (int item1 : nums1) {
+            if ((myMap.containsKey(item1))) {
+                myMap.put(item1, myMap.get(item1) + 1);
             } else {
-                myMap.put(value, 1);
+                myMap.put(item1, 1);
             }
         }
 
-        for (int j : nums2) {
-            if (myMap.containsKey(j)) {
-                if (myMap.get(j) > 0) {
-                    resList.add(j);
-                    myMap.put(j, myMap.get(j) - 1);
+        for (int item2 : nums2) {
+            if (myMap.containsKey(item2)) {
+                if (myMap.get(item2) > 0) {
+                    resList.add(item2);
+                    myMap.put(item2, myMap.get(item2) - 1);
                 }
             }
         }
