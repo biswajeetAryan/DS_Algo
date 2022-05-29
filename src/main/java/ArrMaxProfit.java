@@ -26,9 +26,7 @@ class SolutionArrMaxProfit {
 //            for (int j = i+1; j < prices.length; j++) {
 //                sell=Math.max(sell,prices[j]);
 //            }
-//            diff=sell-buy;
-//            System.out.println(buy+" "+diff);
-//            profit=Math.max(profit,diff);
+//            profit=Math.max(profit,sell-buy);
 //        }
 //        return Math.max(profit, 0);
 //    }
