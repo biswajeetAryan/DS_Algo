@@ -32,15 +32,16 @@ class SolutionArrIsValidSudoku {
                 }
             }
         }
-        // block is the top right corner(index) of the current block(3x3) of board[i][j] out of 9 blocks(3x3)
-        // block indices are:
-        // 0-0  0-1  0-2
-        // 1-0  1-1  1-2
-        // 2-0  2-1  2-2
-        // last element index is (8,8) --> block index = (8/3,8/3) == (2,2)
-        // last-1 element index is (7,8) --> block index = (7/3,8/3) == (2,2)
-        // last-2 element index is (6,8) --> block index = (6/3,8/3) == (2,2)
-        // for all numbers inside a block will have same block index
         return true;
     }
+
+    // block is the top right corner(index) of the current block(3x3) of board[i][j] out of 9 blocks(3x3)
+    // block indices are:
+    // 0-0  0-1  0-2
+    // 1-0  1-1  1-2
+    // 2-0  2-1  2-2
+    // last element index is (8,8) --> block index = (8/3,8/3) == (2,2)
+    // last-1 element index is (7,8) --> block index = (7/3,8/3) == (2,2)
+    // last-2 element index is (6,8) --> block index = (6/3,8/3) == (2,2)
+    // for all numbers inside a block will have same block index
 }
