@@ -1,8 +1,4 @@
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
-import static java.util.Arrays.binarySearch;
 
 public class SearchMatrix {
     public static void main(String[] args) {
